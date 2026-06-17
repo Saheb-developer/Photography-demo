@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSG Pictures · Wedding Photography & Films</title>
+    <meta name="description" content="BSG Pictures - Premium bride photoshoot, portrait, and pre/post wedding photography in Nepal." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* ============================================
+           BSG PICTURES - COMPLETE STYLES
+           ============================================ */
+
+        :root {
+            --gold: #c9a84c;
+            --gold-light: #e0c15e;
+            --gold-dark: #a8873a;
+            --dark: #0a0a0a;
+            --dark-card: #111111;
+            --dark-border: #222222;
+            --text-light: #f8f6f0;
+            --text-muted: #888888;
+            --whatsapp: #25d366;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Poppins', sans-serif;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow-gold: 0 8px 30px rgba(201, 168, 76, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .gold {
+            color: var(--gold);
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-light);
+        }
+
+        ::selection {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            line-height: 1.15;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            max-width: 640px;
+            margin: 0 auto 48px;
+            font-weight: 300;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 44px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--dark);
+            border-color: var(--gold);
+        }
+        .btn-primary:hover {
+            background: var(--gold-light);
+            border-color: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-outline {
+            border: 1.5px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--dark);
+            transform: translateY(-3px);
+            border-color: #fff;
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: #fff;
+            border-color: var(--whatsapp);
+        }
+        .btn-whatsapp:hover {
+            background: #1ebe5a;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-sm {
+            padding: 12px 28px;
+            font-size: 13px;
+        }
+
+        .btn-whatsapp-sm {
+            display: inline-block;
+            padding: 12px 32px;
+            border-radius: 50px;
+            background: var(--whatsapp);
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-whatsapp-sm:hover {
+            background: #1ebe5a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp-sm i {
+            margin-right: 8px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        /* ============================================
+           NAVIGATION - GLASSMORPHIC
+           ============================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            transition: var(--transition);
+            background: rgba(10, 10, 10, 0.25);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 10, 0.55);
+            backdrop-filter: blur(20px) saturate(200%);
+            -webkit-backdrop-filter: blur(20px) saturate(200%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            min-height: 64px;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+            width: 50px;
+            display: block;
+            border-radius: 10px;
+            transition: var(--transition);
+            object-fit: cover;
+        }
+
+        .navbar .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 13px;
+            font-weight: 400;
+            transition: var(--transition);
+            position: relative;
+            letter-spacing: 0.5px;
+            padding: 4px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold);
+        }
+
+        .nav-links .btn-nav {
+            padding: 8px 24px;
+            font-size: 12px;
+            border-radius: 50px;
+            background: var(--gold);
+            color: var(--dark);
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .nav-links .btn-nav:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .nav-links .btn-nav::after {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+            z-index: 1001;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #fff;
+            transition: var(--transition);
+            border-radius: 2px;
+            display: block;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ----- Hero ----- */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            padding-top: 70px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            filter: brightness(0.45) saturate(1.1);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 20px;
+            z-index: 1;
+            animation: fadeUp 1.4s ease;
+        }
+
+        .hero-tag {
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 82px;
+            line-height: 1.05;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 680px;
+            margin: 0 auto 36px;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .hero-buttons .btn {
+            min-width: 180px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--gold);
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            animation: bounce 2.5s infinite;
+            opacity: 0.7;
+        }
+
+        .scroll-indicator i {
+            display: block;
+            margin-top: 8px;
+            font-size: 18px;
+        }
+
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ----- Sections ----- */
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* ----- About ----- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 50px;
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-serif);
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: #1a1a1a;
+        }
+
+        .about-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .about-image-wrapper:hover img {
+            transform: scale(1.03);
+        }
+
+        .about-image-badge {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* ============================================
+           PORTFOLIO - FILTERABLE GALLERY
+           ============================================ */
+
+        /* Filter Buttons */
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            padding: 10px 28px;
+            border-radius: 50px;
+            border: 1.5px solid var(--dark-border);
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gold);
+            color: var(--dark);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* Gallery Grid */
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold);
+            box-shadow: 0 12px 40px rgba(201, 168, 76, 0.12);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 24px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay h4 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .gallery-item .overlay p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .gallery-item .category-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(201, 168, 76, 0.92);
+            color: var(--dark);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            grid-column: 1 / -1;
+        }
+
+        .no-results i {
+            font-size: 48px;
+            color: var(--gold);
+            opacity: 0.3;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* ----- Services ----- */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .service-item {
+            background: var(--dark-card);
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid var(--dark-border);
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .service-item:hover::before {
+            opacity: 1;
+        }
+
+        .service-item:hover {
+            border-color: var(--gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .service-item .icon-wrap {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: rgba(201, 168, 76, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            transition: var(--transition);
+        }
+
+        .service-item:hover .icon-wrap {
+            background: rgba(201, 168, 76, 0.18);
+            transform: scale(1.05);
+        }
+
+        .service-item i {
+            font-size: 32px;
+            color: var(--gold);
+        }
+
+        .service-item h4 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .service-item .price-tag {
+            display: inline-block;
+            background: rgba(201, 168, 76, 0.12);
+            color: var(--gold);
+            padding: 4px 20px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 8px 0 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .service-item .description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            min-height: 44px;
+            line-height: 1.6;
+        }
+
+        /* ----- Pricing Packages ----- */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 10px;
+        }
+
+        .pricing-item {
+            background: var(--dark-card);
+            padding: 40px 28px;
+            border-radius: 16px;
+            border: 1px solid var(--dark-border);
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .pricing-item.featured {
+            border: 2px solid var(--gold);
+            transform: scale(1.04);
+        }
+
+        .pricing-item.featured::before {
+            content: 'Best Value';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: var(--dark);
+            padding: 4px 24px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .pricing-item:hover {
+            border-color: var(--gold);
+            transform: translateY(-6px);
+        }
+
+        .pricing-item.featured:hover {
+            transform: scale(1.04) translateY(-6px);
+        }
+
+        .pricing-item h3 {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .pricing-item .price {
+            font-size: 38px;
+            font-weight: 700;
+            color: var(--gold);
+            margin: 12px 0 4px;
+        }
+
+        .pricing-item .price span {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--text-muted);
+        }
+
+        .pricing-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 28px;
+        }
+
+        .pricing-item ul li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .pricing-item ul li i {
+            color: var(--gold);
+            margin-right: 10px;
+            font-size: 13px;
+        }
+
+        /* ----- Testimonials ----- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .testimonial-card {
+            background: var(--dark-card);
+            padding: 34px 28px;
+            border-radius: 16px;
+            border: 1px solid var(--dark-border);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--gold);
+        }
+
+        .testimonial-card .quote-icon {
+            color: var(--gold);
+            font-size: 30px;
+            opacity: 0.3;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+        }
+
+        .testimonial-card .client {
+            margin-top: 18px;
+            font-weight: 500;
+            color: var(--gold);
+        }
+
+        .testimonial-card .client-role {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* ----- Why Choose Us ----- */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+        }
+
+        .why-item {
+            background: var(--dark-card);
+            padding: 34px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--dark-border);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .why-item:hover {
+            border-color: var(--gold);
+            transform: translateY(-6px);
+        }
+
+        .why-item .icon-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(201, 168, 76, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 14px;
+        }
+
+        .why-item i {
+            font-size: 26px;
+            color: var(--gold);
+        }
+
+        .why-item h4 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .why-item p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* ----- Booking Steps ----- */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px 28px;
+            margin: 24px 0 10px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--dark-card);
+            padding: 14px 28px;
+            border-radius: 60px;
+            border: 1px solid var(--dark-border);
+            transition: var(--transition);
+        }
+
+        .step:hover {
+            border-color: var(--gold);
+        }
+
+        .step .num {
+            background: var(--gold);
+            color: var(--dark);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .step .text {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* ----- Contact ----- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 10px;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+            margin-bottom: 28px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item .icon-wrap {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(201, 168, 76, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-item i {
+            color: var(--gold);
+            font-size: 18px;
+        }
+
+        .contact-item a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+            font-size: 15px;
+        }
+
+        .contact-item a:hover {
+            color: var(--gold);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid var(--dark-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        /* ----- FAQ ----- */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+            margin-top: 10px;
+        }
+
+        .faq-item {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .faq-item h4 {
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .faq-item p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 14px;
+        }
+
+        /* ----- Footer ----- */
+        footer {
+            padding: 60px 0 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            text-align: center;
+            color: var(--text-dark);
+            font-size: 14px;
+        }
+
+        .footer-brand {
+            font-family: var(--font-serif);
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .footer-brand img {
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .footer-tagline {
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 24px;
+            margin: 16px 0 24px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 13px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.25);
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        /* ----- WhatsApp Float ----- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: var(--whatsapp);
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+            z-index: 999;
+            text-decoration: none;
+            transition: var(--transition);
+            animation: pulse-whatsapp 2.5s infinite;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%,
+            100% {
+                box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+            }
+            50% {
+                box-shadow: 0 8px 50px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-3px);
+            background: #1ebe5a;
+        }
+
+        /* ----- Lightbox ----- */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.94);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            animation: fadeIn 0.3s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 85vh;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -56px;
+            right: 0;
+            font-size: 36px;
+            color: #fff;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2001;
+            opacity: 0.6;
+        }
+
+        .lightbox-close:hover {
+            opacity: 1;
+            transform: rotate(90deg);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            padding: 0 16px;
+        }
+
+        .lightbox-nav button {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 22px;
+            transition: var(--transition);
+            pointer-events: all;
+        }
+
+        .lightbox-nav button:hover {
+            background: rgba(201, 168, 76, 0.7);
+            border-color: var(--gold);
+            transform: scale(1.05);
+        }
+
+        .lightbox-caption {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+            margin-top: 18px;
+            padding: 8px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* ----- Responsive ----- */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 62px;
+            }
+            .section-title {
+                font-size: 44px;
+            }
+            .about-grid {
+                gap: 40px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .portfolio-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                min-height: 60px;
+                background: rgba(10, 10, 10, 0.4);
+                backdrop-filter: blur(14px) saturate(180%);
+                -webkit-backdrop-filter: blur(14px) saturate(180%);
+            }
+
+            .navbar .logo img {
+                height: 42px;
+                width: 42px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: blur(20px) saturate(200%);
+                -webkit-backdrop-filter: blur(20px) saturate(200%);
+                flex-direction: column;
+                padding: 24px 28px;
+                gap: 18px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links .btn-nav {
+                display: inline-block;
+                width: fit-content;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .hero-tag {
+                font-size: 11px;
+            }
+            .hero-buttons .btn {
+                min-width: 140px;
+                padding: 14px 28px;
+                font-size: 13px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 34px;
+                text-align: center;
+            }
+            .section-subtitle {
+                font-size: 15px;
+                margin-bottom: 32px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .about-stats {
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .stat-number {
+                font-size: 32px;
+            }
+
+            .filter-buttons {
+                gap: 8px;
+            }
+            .filter-btn {
+                padding: 8px 18px;
+                font-size: 12px;
+            }
+
+            .portfolio-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 16px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 380px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pricing-item.featured {
+                transform: scale(1);
+                order: -1;
+            }
+            .pricing-item.featured:hover {
+                transform: translateY(-6px);
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .steps {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            .step {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .lightbox {
+                padding: 16px;
+            }
+            .lightbox-close {
+                top: -36px;
+                font-size: 28px;
+            }
+            .lightbox-nav button {
+                padding: 10px 14px;
+                font-size: 16px;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+
+            .footer-brand img {
+                height: 34px;
+                width: 34px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                min-width: unset;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .filter-buttons {
+                gap: 6px;
+            }
+            .filter-btn {
+                padding: 6px 14px;
+                font-size: 11px;
+            }
+
+            .portfolio-gallery {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .gallery-item .overlay h4 {
+                font-size: 14px;
+            }
+            .gallery-item .overlay p {
+                font-size: 11px;
+            }
+            .gallery-item .category-badge {
+                font-size: 9px;
+                padding: 2px 10px;
+            }
+
+            .service-item {
+                padding: 28px 20px;
+            }
+            .service-item h4 {
+                font-size: 19px;
+            }
+            .service-item .price-tag {
+                font-size: 17px;
+                padding: 4px 16px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .why-item {
+                padding: 18px 12px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                bottom: 16px;
+                right: 16px;
+            }
+
+            .navbar .logo img {
+                height: 36px;
+                width: 36px;
+            }
+
+            .footer-brand img {
+                height: 28px;
+                width: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================
+    NAVIGATION
+    ========================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="BSG Pictures Logo" />
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn-nav">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+    HERO
+    ========================================== -->
+    <section class="hero" id="home">
+        <video class="hero-bg" autoplay muted loop playsinline>
+            <source src="hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">Premium Photography &amp; Cinematic Films</div>
+            <h1>
+                Capturing Love<br />
+                <span class="gold">Across Nepal</span>
+            </h1>
+            <p>
+                BSG Pictures delivers stunning bride photoshoots, creative portraits, and
+                unforgettable pre/post-wedding stories. We bring your vision to life with
+                professionalism and artistry.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-outline">Book Now</a>
+                <a href="https://wa.me/9779815845376" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            Scroll <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    ABOUT
+    ========================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">BSG <span class="gold">Pictures</span></h2>
+                    <p>
+                        BSG Pictures is a team of passionate photographers and filmmakers
+                        based in Kathmandu, Nepal. With a keen eye for detail and a love for
+                        storytelling, we capture the essence of every moment — from the
+                        nervous excitement of a bride to the candid laughter of a portrait session.
+                    </p>
+                    <p>
+                        Our style blends documentary authenticity with fine-art aesthetics,
+                        ensuring your memories are preserved as beautifully as they were lived.
+                        We serve clients across Nepal, including Kathmandu, Pokhara, Chitwan,
+                        and beyond.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="300">0+</div>
+                            <div class="stat-label">Weddings Covered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="8">0+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop" alt="BSG Pictures Team" />
+                    <div class="about-image-badge"><i class="fas fa-camera"></i> 8+ Years</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    PORTFOLIO - FILTERABLE GALLERY
+    ========================================== -->
+    <section id="portfolio">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Our Work</span>
+            <h2 class="section-title" style="text-align:center;">Portfolio <span class="gold">Gallery</span></h2>
+            <p class="section-subtitle">Explore our signature styles — click a category to filter images</p>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bride">Bride</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="prewedding">Pre/Post Wedding</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="video">Cinematic</button>
+                <button class="filter-btn" data-filter="drone">Drone</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="portfolio-gallery" id="galleryGrid">
+                <!-- Items will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    SERVICES
+    ========================================== -->
+    <section id="services">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">What We Offer</span>
+            <h2 class="section-title" style="text-align:center;">Our <span class="gold">Services</span></h2>
+            <p class="section-subtitle">Choose from our premium photography services tailored to your needs</p>
+            <div class="service-grid">
+                <!-- Service 1: Bride Photoshoot -->
+                <div class="service-item">
+                    <div class="icon-wrap"><i class="fas fa-venus"></i></div>
+                    <h4>Bride Photoshoot</h4>
+                    <div class="price-tag">NPR 30,000.00</div>
+                    <p class="description">Best quality photography and Videography. We capture the bride's beauty with elegance and artistry.</p>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Bride%20Photoshoot%20(NPR%2030,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Service 2: Portrait Photoshoot -->
+                <div class="service-item">
+                    <div class="icon-wrap"><i class="fas fa-camera-portrait"></i></div>
+                    <h4>Portrait Photoshoot</h4>
+                    <div class="price-tag">NPR 5,000.00</div>
+                    <p class="description">We are providing best quality portraits for individuals, families, and professionals.</p>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Portrait%20Photoshoot%20(NPR%205,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Service 3: Pre/Post Wedding Shoot -->
+                <div class="service-item">
+                    <div class="icon-wrap"><i class="fas fa-heart"></i></div>
+                    <h4>Pre/Post Wedding Shoot</h4>
+                    <div class="price-tag">NPR 30,000.00</div>
+                    <p class="description">We are providing different types of pre and post wedding shoots to tell your unique love story.</p>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Pre/Post%20Wedding%20Shoot%20(NPR%2030,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    PRICING PACKAGES
+    ========================================== -->
+    <section id="pricing">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Packages</span>
+            <h2 class="section-title" style="text-align:center;">Choose Your <span class="gold">Plan</span></h2>
+            <p class="section-subtitle">Flexible packages combining our services for your special day</p>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <h3>Bride &amp; Portrait</h3>
+                    <div class="price">NPR 33,000</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bride Photoshoot (Full session)</li>
+                        <li><i class="fas fa-check"></i> Portrait Photoshoot (1 hour)</li>
+                        <li><i class="fas fa-check"></i> 30+ edited images</li>
+                        <li><i class="fas fa-check"></i> Online gallery</li>
+                    </ul>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Bride%20%26%20Portrait%20package%20(NPR%2033,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book Now
+                    </a>
+                </div>
+
+                <div class="pricing-item featured">
+                    <h3>Wedding Story</h3>
+                    <div class="price">NPR 55,000</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Pre/Post Wedding Shoot</li>
+                        <li><i class="fas fa-check"></i> Bride Photoshoot</li>
+                        <li><i class="fas fa-check"></i> Cinematic highlight film</li>
+                        <li><i class="fas fa-check"></i> 100+ edited images</li>
+                        <li><i class="fas fa-check"></i> Online gallery</li>
+                    </ul>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Wedding%20Story%20package%20(NPR%2055,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book Now
+                    </a>
+                </div>
+
+                <div class="pricing-item">
+                    <h3>Complete Experience</h3>
+                    <div class="price">NPR 60,000</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bride Photoshoot</li>
+                        <li><i class="fas fa-check"></i> Portrait Photoshoot</li>
+                        <li><i class="fas fa-check"></i> Pre/Post Wedding Shoot</li>
+                        <li><i class="fas fa-check"></i> Drone coverage</li>
+                        <li><i class="fas fa-check"></i> 150+ edited images</li>
+                        <li><i class="fas fa-check"></i> Premium album</li>
+                    </ul>
+                    <a href="https://wa.me/9779815845376?text=Hi!%20I'm%20interested%20in%20the%20Complete%20Experience%20package%20(NPR%2060,000).%20Can%20you%20share%20more%20details%3F" target="_blank" class="btn-whatsapp-sm">
+                        <i class="fab fa-whatsapp"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:24px;color:var(--text-muted);font-size:14px;">
+                <i class="fas fa-tag gold"></i> Custom packages available — <a href="#contact" style="color:var(--gold);">contact us</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    TESTIMONIALS
+    ========================================== -->
+    <section id="testimonials">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Testimonials</span>
+            <h2 class="section-title" style="text-align:center;">Kind <span class="gold">Words</span></h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"The bride photoshoot was absolutely stunning. BSG made me feel so comfortable and the results were beyond my expectations."</p>
+                    <div class="client">— Anjali Shrestha</div>
+                    <div class="client-role">Bride, Kathmandu</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Our pre-wedding shoot in Pokhara was magical. The team captured our chemistry perfectly. Highly recommend!"</p>
+                    <div class="client">— Sushil &amp; Priya</div>
+                    <div class="client-role">Pre-Wedding, Pokhara</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Professional, creative, and affordable. The portrait session was quick and the photos were incredible."</p>
+                    <div class="client">— Rohan Pandey</div>
+                    <div class="client-role">Portrait, Chitwan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    WHY CHOOSE US
+    ========================================== -->
+    <section id="why">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Why Us</span>
+            <h2 class="section-title" style="text-align:center;">Why Choose <span class="gold">BSG</span></h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="icon-wrap"><i class="fas fa-camera-retro"></i></div>
+                    <h4>Professional Gear</h4>
+                    <p>Canon, Sony, drones, gimbals — we use top-tier equipment for flawless results.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon-wrap"><i class="fas fa-clock"></i></div>
+                    <h4>Fast Delivery</h4>
+                    <p>Gallery in 2 weeks, films in 4 weeks. We value your time.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon-wrap"><i class="fas fa-users"></i></div>
+                    <h4>Experienced Team</h4>
+                    <p>8+ years, 300+ weddings — we know how to handle every moment.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon-wrap"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Affordable Pricing</h4>
+                    <p>Premium quality at competitive rates. Transparent pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    BOOKING PROCESS
+    ========================================== -->
+    <section id="booking">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">How It Works</span>
+            <h2 class="section-title" style="text-align:center;">Easy <span class="gold">Booking</span></h2>
+            <div class="steps">
+                <div class="step"><span class="num">1</span> <span class="text">Contact us on WhatsApp</span></div>
+                <div class="step"><span class="num">2</span> <span class="text">Discuss your vision</span></div>
+                <div class="step"><span class="num">3</span> <span class="text">Confirm booking</span></div>
+                <div class="step"><span class="num">4</span> <span class="text">Shoot day</span></div>
+                <div class="step"><span class="num">5</span> <span class="text">Delivery</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    CONTACT
+    ========================================== -->
+    <section id="contact">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Get in Touch</span>
+            <h2 class="section-title" style="text-align:center;">Let's <span class="gold">Connect</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>We'd love to hear from you</h3>
+                    <p>Whether you're planning a bride photoshoot, a portrait session, or a full wedding — we're here to help.</p>
+
+                    <div class="contact-item">
+                        <div class="icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                        <a href="https://wa.me/9779815845376" target="_blank">+977 9815845376</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                        <a href="tel:+9779815845376">+977 9815845376</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                        <a href="mailto:info@bsgpictures.com">info@bsgpictures.com</a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1BJCLBndV9/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bsg.pictures?igsh=Y2JpcGk3dWR2NXFp" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div style="display:flex;flex-direction:column;gap:20px;justify-content:center;">
+                    <div style="background:var(--dark-card);padding:30px;border-radius:16px;border:1px solid var(--dark-border);text-align:center;">
+                        <i class="fab fa-whatsapp" style="font-size:48px;color:var(--whatsapp);margin-bottom:12px;"></i>
+                        <h3 style="font-family:var(--font-serif);font-size:24px;">Book via WhatsApp</h3>
+                        <p style="color:var(--text-muted);font-size:14px;margin:8px 0 16px;">Quickest way to reach us. We reply within minutes.</p>
+                        <a href="https://wa.me/9779815845376" target="_blank" class="btn btn-whatsapp" style="width:100%;">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                    <div style="background:var(--dark-card);padding:30px;border-radius:16px;border:1px solid var(--dark-border);text-align:center;">
+                        <i class="fas fa-calendar-check" style="font-size:48px;color:var(--gold);margin-bottom:12px;"></i>
+                        <h3 style="font-family:var(--font-serif);font-size:24px;">Check Availability</h3>
+                        <p style="color:var(--text-muted);font-size:14px;margin:8px 0 16px;">Call us directly to book your date.</p>
+                        <a href="tel:+9779815845376" class="btn btn-primary" style="width:100%;">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    FAQ
+    ========================================== -->
+    <section id="faq">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">FAQ</span>
+            <h2 class="section-title" style="text-align:center;">Frequently Asked <span class="gold">Questions</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-calendar-check gold"></i> How far in advance should I book?</h4>
+                    <p>We recommend at least 2–3 months in advance for bride photoshoots and pre-wedding shoots. For weddings, 4–6 months is ideal.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-clock gold"></i> How long does it take to get photos?</h4>
+                    <p>Portrait sessions: 1 week. Bride shoots: 2 weeks. Weddings: 2–3 weeks for photos, 4–6 weeks for cinematic films.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-plane gold"></i> Do you travel outside Kathmandu?</h4>
+                    <p>Yes! We serve all of Nepal. Travel costs may apply for destinations beyond the valley.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-edit gold"></i> Can I customize a package?</h4>
+                    <p>Absolutely. We tailor every shoot to your unique style, location, and budget. Just contact us with your requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    FOOTER
+    ========================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <img src="logo.jpg" alt="BSG Pictures Logo" />
+                BSG <span class="gold">Pictures</span>
+            </div>
+            <p class="footer-tagline">Premium Photography · Cinematic Films · Nepal</p>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/1BJCLBndV9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/bsg.pictures?igsh=Y2JpcGk3dWR2NXFp" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BSG Pictures — Crafting timeless love stories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+    WHATSAPP FLOATING BUTTON
+    ========================================== -->
+    <a href="https://wa.me/9779815845376" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==========================================
+    LIGHTBOX
+    ========================================== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close" id="lightboxClose">&times;</div>
+            <img src="" alt="Gallery" class="lightbox-image" id="lightboxImage" />
+            <div class="lightbox-nav">
+                <button id="lightboxPrev">&#10094;</button>
+                <button id="lightboxNext">&#10095;</button>
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+    JAVASCRIPT
+    ========================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // ===== NAVBAR SCROLL =====
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 60) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // ===== HAMBURGER =====
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // ===== SMOOTH SCROLL =====
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = target.getBoundingClientRect().top + window.pageYOffset;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ===== SCROLL ANIMATIONS =====
+            const animElements = document.querySelectorAll(
+                '.section-title, .section-subtitle, .service-item, .pricing-item, .testimonial-card, .why-item, .about-grid, .step, .gallery-item'
+                );
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            animElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+
+            // ===== STAT COUNTER =====
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.dataset.target);
+                        const duration = 2000;
+                        const start = performance.now();
+
+                        function updateCounter(time) {
+                            const elapsed = time - start;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const value = Math.floor(progress * target);
+                            el.textContent = value + '+';
+                            if (progress < 1) requestAnimationFrame(updateCounter);
+                            else el.textContent = target + '+';
+                        }
+                        requestAnimationFrame(updateCounter);
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            statNumbers.forEach(el => counterObserver.observe(el));
+
+            // ============================================
+            // FILTERABLE GALLERY
+            // ============================================
+
+            // Gallery Data with images for each category
+            const galleryData = {
+                bride: [
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Elegant Bride Portrait', location: 'Kathmandu' },
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Traditional Bridal Look', location: 'Bhaktapur' },
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Bride with Floral Veil', location: 'Patan' },
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Radiant Bride Smile', location: 'Kathmandu' },
+                ],
+                portrait: [
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Professional Portrait', location: 'Kathmandu' },
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Creative Portrait Session', location: 'Patan' },
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Family Portrait', location: 'Chitwan' },
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Artistic Headshot', location: 'Pokhara' },
+                ],
+                prewedding: [
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Romantic Pre-Wedding', location: 'Pokhara' },
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Couple by the Lake', location: 'Phewa Lake' },
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Pre-Wedding Adventure', location: 'Nagarkot' },
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Sunset Love Story', location: 'Chitwan' },
+                ],
+                wedding: [
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Wedding Ceremony', location: 'Kathmandu' },
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Traditional Wedding', location: 'Bhaktapur' },
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Wedding Reception', location: 'Patan' },
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Intimate Wedding', location: 'Pokhara' },
+                ],
+                video: [
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Cinematic Film Still', location: 'Kathmandu' },
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Wedding Highlight Reel', location: 'Pokhara' },
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Emotional Film Moment', location: 'Chitwan' },
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Cinematic Love Story', location: 'Kathmandu' },
+                ],
+                drone: [
+                    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=600&fit=crop',
+                        title: 'Aerial Venue View', location: 'Kathmandu' },
+                    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop',
+                        title: 'Drone Wedding Shot', location: 'Pokhara' },
+                    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
+                        title: 'Birds Eye View', location: 'Chitwan' },
+                    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+                        title: 'Aerial Landscape', location: 'Mustang' },
+                ]
+            };
+
+            const galleryGrid = document.getElementById('galleryGrid');
+            let currentFilter = 'all';
+
+            // Render Gallery
+            function renderGallery(filter) {
+                let items = [];
+                if (filter === 'all') {
+                    // Combine all categories
+                    for (const category in galleryData) {
+                        items = items.concat(galleryData[category].map(img => ({ ...img, category })));
+                    }
+                } else if (galleryData[filter]) {
+                    items = galleryData[filter].map(img => ({ ...img, category: filter }));
+                } else {
+                    items = [];
+                }
+
+                if (items.length === 0) {
+                    galleryGrid.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-search"></i>
+                            No images found in this category.
+                        </div>
+                    `;
+                    return;
+                }
+
+                galleryGrid.innerHTML = items.map((item, index) => `
+                    <div class="gallery-item" data-category="${item.category}" data-index="${index}">
+                        <img src="${item.src}" alt="${item.title}" loading="lazy" />
+                        <span class="category-badge">${item.category}</span>
+                        <div class="overlay">
+                            <h4>${item.title}</h4>
+                            <p><i class="fas fa-map-pin"></i> ${item.location}</p>
+                        </div>
+                    </div>
+                `).join('');
+
+                // Add click listeners to gallery items for lightbox
+                document.querySelectorAll('.gallery-item').forEach(el => {
+                    el.addEventListener('click', function() {
+                        const category = this.dataset.category;
+                        const index = parseInt(this.dataset.index);
+                        const filteredItems = filter === 'all' ?
+                            items :
+                            items.filter(item => item.category === filter);
+                        const actualIndex = filteredItems.findIndex((item, i) => i === index);
+                        if (actualIndex !== -1) {
+                            currentLightboxItems = filteredItems;
+                            currentLightboxIndex = actualIndex;
+                            openLightbox(actualIndex);
+                        }
+                    });
+                });
+            }
+
+            // ===== LIGHTBOX =====
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const closeBtn = document.getElementById('lightboxClose');
+            const prevBtn = document.getElementById('lightboxPrev');
+            const nextBtn = document.getElementById('lightboxNext');
+            let currentLightboxItems = [];
+            let currentLightboxIndex = 0;
+
+            function openLightbox(index) {
+                if (currentLightboxItems && currentLightboxItems[index]) {
+                    lightboxImg.src = currentLightboxItems[index].src;
+                    lightboxCaption.textContent = `${currentLightboxItems[index].title} · ${currentLightboxItems[index].location}`;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            function prevImage() {
+                if (currentLightboxItems.length === 0) return;
+                currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxItems.length) % currentLightboxItems
+                .length;
+                openLightbox(currentLightboxIndex);
+            }
+
+            function nextImage() {
+                if (currentLightboxItems.length === 0) return;
+                currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxItems.length;
+                openLightbox(currentLightboxIndex);
+            }
+
+            closeBtn.addEventListener('click', closeLightbox);
+            prevBtn.addEventListener('click', prevImage);
+            nextBtn.addEventListener('click', nextImage);
+            document.addEventListener('keydown', function(e) {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'ArrowRight') nextImage();
+            });
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === this) closeLightbox();
+            });
+
+            // ===== FILTER BUTTONS =====
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.filter;
+                    renderGallery(currentFilter);
+                });
+            });
+
+            // ===== INITIAL RENDER =====
+            renderGallery('all');
+
+            // ===== WHATSAPP TRACKING =====
+            document.querySelectorAll('.btn-whatsapp, .whatsapp-float, .btn-whatsapp-sm, .contact-item a[href*="wa.me"]')
+                .forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        console.log('WhatsApp clicked:', this.href);
+                    });
+                });
+
+            console.log('BSG Pictures - Professional website loaded! 🎬');
+        });
+    </script>
+
+</body>
+</html>
